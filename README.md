@@ -20,3 +20,8 @@
 *  Frontend Core Features: 2 hours
 *  Styling & Polish: 20 minutes
 *  Testing & Debugging: 30 minutes
+
+### References:
+I used the following videos to implement some of the code:
+Carousel implementation: https://www.youtube.com/watch?v=bd9MLIb3DCg
+Filtering implementation: https://www.youtube.com/watch?v=u1yr_HZivzk
