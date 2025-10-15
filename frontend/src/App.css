@@ -1,0 +1,137 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fcf9ea;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin: 5px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: #ffbdbd;
+}
+
+#add-task-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+#add-task-button:hover {
+  background-color: #45a049;
+}
+
+select {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px;
+}
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 20px;
+  margin: auto;
+}
+
+option {
+  font-size: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin: 0 0;
+  background-color: #badfdb;
+  color: white;
+}
+
+.add-task-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#new-task-header {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 2rem;
+  margin-top: 100px;
+}
+
+.task-list {
+  padding-block: 8px;
+  border-block: 1px solid;
+  display: flex;
+  --gap: 2rem;
+  gap: var(--gap);
+
+  overflow: hidden;
+  user-select: none;
+}
+
+.task-list ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  overflow: hidden;
+  animation: scroll 40s linear infinite;
+}
+
+.task-list:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filter-button {
+  background-color: #fff;
+  border: 1px solid #badfdb;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #badfdb;
+  color: black;
+}
+
+.filter-button.active {
+  background-color: #badfdb;
+  color: black;
+  font-weight: bold;
+}

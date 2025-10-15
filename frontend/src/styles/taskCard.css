@@ -1,0 +1,42 @@
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.task-card {
+  width: 25rem;
+  height: 90%;
+  background: #badfdb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card.priority-low {
+  background: #badfdb;
+}
+
+.task-card.priority-medium {
+  background: #f8f2bf;
+}
+
+.task-card.priority-high {
+  background: #fa9595;
+}
+
+.task-card.completed {
+  background-color: #e9f9f8;
+  text-decoration: line-through;
+  color: #888;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
