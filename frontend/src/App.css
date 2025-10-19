@@ -98,7 +98,7 @@ option {
   align-items: center;
   gap: var(--gap);
   overflow: hidden;
-  animation: scroll 70s linear infinite;
+  animation: scroll 1000s linear infinite;
 }
 
 .task-list:hover ul {
@@ -134,4 +134,10 @@ option {
   background-color: #badfdb;
   color: black;
   font-weight: bold;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }

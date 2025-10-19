@@ -137,15 +137,15 @@ function App() {
         </button>
       </div>
       <div className="control-buttons">
-        <button onClick={() => setTasks((prev) => [...prev.slice(1), prev[0]])}>
-          Next
-        </button>
         <button
           onClick={() =>
             setTasks((prev) => [prev.at(-1), ...prev.slice(0, -1)])
           }
         >
-          Prev
+          ←
+        </button>
+        <button onClick={() => setTasks((prev) => [...prev.slice(1), prev[0]])}>
+          →
         </button>
       </div>
       <div className="task-list">
