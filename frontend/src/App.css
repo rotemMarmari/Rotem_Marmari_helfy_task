@@ -98,7 +98,7 @@ option {
   align-items: center;
   gap: var(--gap);
   overflow: hidden;
-  animation: scroll 40s linear infinite;
+  animation: scroll 70s linear infinite;
 }
 
 .task-list:hover ul {

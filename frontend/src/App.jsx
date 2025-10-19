@@ -136,6 +136,18 @@ function App() {
           Incomplete
         </button>
       </div>
+      <div className="control-buttons">
+        <button onClick={() => setTasks((prev) => [...prev.slice(1), prev[0]])}>
+          Next
+        </button>
+        <button
+          onClick={() =>
+            setTasks((prev) => [prev.at(-1), ...prev.slice(0, -1)])
+          }
+        >
+          Prev
+        </button>
+      </div>
       <div className="task-list">
         <ul>
           {tasks
